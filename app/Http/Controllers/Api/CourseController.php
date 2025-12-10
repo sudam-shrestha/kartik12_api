@@ -11,6 +11,17 @@ use Illuminate\Support\Facades\Validator;
 class CourseController extends Controller
 {
 
+    // public function __construct()
+    // {
+    //     $user = auth()->user();
+    //     if ($user->role !== "admin") {
+    //         return response()->json([
+    //             "success" => false,
+    //             "message" => "You are not admin"
+    //         ]);
+    //     }
+    // }
+
     public function index()
     {
         $courses = Course::all();
